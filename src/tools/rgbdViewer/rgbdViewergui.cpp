@@ -337,20 +337,18 @@ bool rgbdViewergui::on_clicked_event_rgb(GdkEventButton* event) {
 		//d=d*10;
 		float xp,yp,zp,camx,camy,camz;
 		float ux,uy,uz;
-		float x,y;
-		float k;
 		float c1x, c1y, c1z;
 		float fx,fy,fz;
 		float fmod;
-		float t;
 		float Fx,Fy,Fz;
+        float t;
 
 		mypro->mybackproject(x, y, &xp, &yp, &zp, &camx, &camy, &camz,0);
 
 
 
 		//vector unitario
-		float modulo;
+		double modulo;
 
 		modulo = sqrt(1/(((camx-xp)*(camx-xp))+((camy-yp)*(camy-yp))+((camz-zp)*(camz-zp))));
 		mypro->mygetcamerafoa(&c1x, &c1y, &c1z, 0);
@@ -520,8 +518,6 @@ rgbdViewergui::add_depth_pointsImage(cv::Mat imageRGB, cv::Mat distance) {
                 //d=d*10;
                 float xp,yp,zp,camx,camy,camz;
                 float ux,uy,uz;
-                float x,y;
-                float k;
                 float c1x, c1y, c1z;
                 float fx,fy,fz;
                 float fmod;

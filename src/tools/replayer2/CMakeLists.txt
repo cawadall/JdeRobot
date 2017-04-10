@@ -1,4 +1,9 @@
-	SET(SOURCE_FILES replayer.cpp replayergui.cpp control.cpp)
+	SET(SOURCE_FILES
+			replayer.cpp
+			replayergui
+			control
+			interfaces/CameraInterface
+			)
 
 add_definitions(-DGLADE_DIR="${gladedir}")
 
