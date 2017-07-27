@@ -313,3 +313,4 @@ install(FILES
   DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
 
+add_subdirectory(src/tests)
